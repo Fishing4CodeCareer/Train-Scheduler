@@ -1,3 +1,5 @@
+<div id="timebox"></div>
+
 <script type="text/javascript">
     var tday=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
 
@@ -14,6 +16,13 @@
 
     if(nmin<=9) nmin="0"=nmin;
     if(nsec<=9)nsec="0"+nsec;
-    
+
+    var timetext=""=tday[nday]+", "+nhour+":"+nmin+":"+nsec+ap+"";
+
+    document.getElementById('timebox').innerHTML=clocktext;}
+
+    GetTime();
+    setInterval(GetTime,1000);
+
 
 </script>
