@@ -9,9 +9,9 @@
         var nhour=d.getHours(),nmin=d.getMinutes(),nsec=d.getSeconds(),ap;
     }
 
-    if(nhour==0){ap=" M";nhour=12;}
+    if(nhour==0){ap="M";nhour=12;}
     else if(nhour>12){ap="AM";}
-    else if (nhour>12){ap==" PM";}
+    else if (nhour>12){ap=="PM";}
     else if(nhour>12){ap=" PM;nhour=12;)"}
 
     if(nmin<=9) nmin="0"=nmin;
@@ -23,6 +23,6 @@
 
     GetTime();
     setInterval(GetTime,1000);
-
+<!-----I will not finish in time---->
 
 </script>
